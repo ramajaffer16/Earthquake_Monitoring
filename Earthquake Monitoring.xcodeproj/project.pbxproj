@@ -13,9 +13,6 @@
 		65B40B732C293C00000F59D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B40B722C293C00000F59D3 /* ViewController.swift */; };
 		65B40B782C293C03000F59D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65B40B772C293C03000F59D3 /* Assets.xcassets */; };
 		65B40B7B2C293C03000F59D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B40B792C293C03000F59D3 /* LaunchScreen.storyboard */; };
-		65B40B862C293C04000F59D3 /* Earthquake_MonitoringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B40B852C293C04000F59D3 /* Earthquake_MonitoringTests.swift */; };
-		65B40B902C293C04000F59D3 /* Earthquake_MonitoringUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B40B8F2C293C04000F59D3 /* Earthquake_MonitoringUITests.swift */; };
-		65B40B922C293C04000F59D3 /* Earthquake_MonitoringUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B40B912C293C04000F59D3 /* Earthquake_MonitoringUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +42,7 @@
 		65B40B7A2C293C03000F59D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65B40B7C2C293C03000F59D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65B40B812C293C04000F59D3 /* Earthquake MonitoringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Earthquake MonitoringTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		65B40B852C293C04000F59D3 /* Earthquake_MonitoringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Earthquake_MonitoringTests.swift; sourceTree = "<group>"; };
 		65B40B8B2C293C04000F59D3 /* Earthquake MonitoringUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Earthquake MonitoringUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		65B40B8F2C293C04000F59D3 /* Earthquake_MonitoringUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Earthquake_MonitoringUITests.swift; sourceTree = "<group>"; };
-		65B40B912C293C04000F59D3 /* Earthquake_MonitoringUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Earthquake_MonitoringUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,8 +122,6 @@
 			isa = PBXGroup;
 			children = (
 				65B40B6D2C293C00000F59D3 /* Earthquake Monitoring */,
-				65B40B842C293C04000F59D3 /* Earthquake MonitoringTests */,
-				65B40B8E2C293C04000F59D3 /* Earthquake MonitoringUITests */,
 				65B40B6C2C293C00000F59D3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -156,23 +148,6 @@
 				65B40B7C2C293C03000F59D3 /* Info.plist */,
 			);
 			path = "Earthquake Monitoring";
-			sourceTree = "<group>";
-		};
-		65B40B842C293C04000F59D3 /* Earthquake MonitoringTests */ = {
-			isa = PBXGroup;
-			children = (
-				65B40B852C293C04000F59D3 /* Earthquake_MonitoringTests.swift */,
-			);
-			path = "Earthquake MonitoringTests";
-			sourceTree = "<group>";
-		};
-		65B40B8E2C293C04000F59D3 /* Earthquake MonitoringUITests */ = {
-			isa = PBXGroup;
-			children = (
-				65B40B8F2C293C04000F59D3 /* Earthquake_MonitoringUITests.swift */,
-				65B40B912C293C04000F59D3 /* Earthquake_MonitoringUITestsLaunchTests.swift */,
-			);
-			path = "Earthquake MonitoringUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,7 +291,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65B40B862C293C04000F59D3 /* Earthquake_MonitoringTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,8 +298,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65B40B902C293C04000F59D3 /* Earthquake_MonitoringUITests.swift in Sources */,
-				65B40B922C293C04000F59D3 /* Earthquake_MonitoringUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

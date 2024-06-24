@@ -8,6 +8,9 @@
 import Foundation
 struct Constant {
     static let scheme = "https"
+    static let baseURL = "pre"
+    static let port : Int? = nil
+    static let API_KEY = ""
     
 }
 
