@@ -34,15 +34,15 @@
 
 /* Begin PBXFileReference section */
 		659EE7F32C296B7F001826DE /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
-		65B40B6B2C293C00000F59D3 /* Earthquake Monitoring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Earthquake Monitoring.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65B40B6B2C293C00000F59D3 /* Earthquake_Monitoring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Earthquake_Monitoring.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65B40B6E2C293C00000F59D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65B40B702C293C00000F59D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		65B40B722C293C00000F59D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		65B40B772C293C03000F59D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65B40B7A2C293C03000F59D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65B40B7C2C293C03000F59D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		65B40B812C293C04000F59D3 /* Earthquake MonitoringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Earthquake MonitoringTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		65B40B8B2C293C04000F59D3 /* Earthquake MonitoringUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Earthquake MonitoringUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65B40B812C293C04000F59D3 /* Earthquake_MonitoringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Earthquake_MonitoringTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65B40B8B2C293C04000F59D3 /* Earthquake_MonitoringUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Earthquake_MonitoringUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +121,7 @@
 		65B40B622C293C00000F59D3 = {
 			isa = PBXGroup;
 			children = (
-				65B40B6D2C293C00000F59D3 /* Earthquake Monitoring */,
+				65B40B6D2C293C00000F59D3 /* Earthquake_Monitoring */,
 				65B40B6C2C293C00000F59D3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -129,14 +129,14 @@
 		65B40B6C2C293C00000F59D3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				65B40B6B2C293C00000F59D3 /* Earthquake Monitoring.app */,
-				65B40B812C293C04000F59D3 /* Earthquake MonitoringTests.xctest */,
-				65B40B8B2C293C04000F59D3 /* Earthquake MonitoringUITests.xctest */,
+				65B40B6B2C293C00000F59D3 /* Earthquake_Monitoring.app */,
+				65B40B812C293C04000F59D3 /* Earthquake_MonitoringTests.xctest */,
+				65B40B8B2C293C04000F59D3 /* Earthquake_MonitoringUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		65B40B6D2C293C00000F59D3 /* Earthquake Monitoring */ = {
+		65B40B6D2C293C00000F59D3 /* Earthquake_Monitoring */ = {
 			isa = PBXGroup;
 			children = (
 				659EE7EF2C296239001826DE /* Supporting */,
@@ -147,15 +147,15 @@
 				659EE7EA2C2960C2001826DE /* Controllers */,
 				65B40B7C2C293C03000F59D3 /* Info.plist */,
 			);
-			path = "Earthquake Monitoring";
+			path = Earthquake_Monitoring;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		65B40B6A2C293C00000F59D3 /* Earthquake Monitoring */ = {
+		65B40B6A2C293C00000F59D3 /* Earthquake_Monitoring */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 65B40B952C293C04000F59D3 /* Build configuration list for PBXNativeTarget "Earthquake Monitoring" */;
+			buildConfigurationList = 65B40B952C293C04000F59D3 /* Build configuration list for PBXNativeTarget "Earthquake_Monitoring" */;
 			buildPhases = (
 				65B40B672C293C00000F59D3 /* Sources */,
 				65B40B682C293C00000F59D3 /* Frameworks */,
@@ -165,14 +165,14 @@
 			);
 			dependencies = (
 			);
-			name = "Earthquake Monitoring";
+			name = Earthquake_Monitoring;
 			productName = "Earthquake Monitoring";
-			productReference = 65B40B6B2C293C00000F59D3 /* Earthquake Monitoring.app */;
+			productReference = 65B40B6B2C293C00000F59D3 /* Earthquake_Monitoring.app */;
 			productType = "com.apple.product-type.application";
 		};
-		65B40B802C293C04000F59D3 /* Earthquake MonitoringTests */ = {
+		65B40B802C293C04000F59D3 /* Earthquake_MonitoringTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 65B40B982C293C04000F59D3 /* Build configuration list for PBXNativeTarget "Earthquake MonitoringTests" */;
+			buildConfigurationList = 65B40B982C293C04000F59D3 /* Build configuration list for PBXNativeTarget "Earthquake_MonitoringTests" */;
 			buildPhases = (
 				65B40B7D2C293C04000F59D3 /* Sources */,
 				65B40B7E2C293C04000F59D3 /* Frameworks */,
@@ -183,14 +183,14 @@
 			dependencies = (
 				65B40B832C293C04000F59D3 /* PBXTargetDependency */,
 			);
-			name = "Earthquake MonitoringTests";
+			name = Earthquake_MonitoringTests;
 			productName = "Earthquake MonitoringTests";
-			productReference = 65B40B812C293C04000F59D3 /* Earthquake MonitoringTests.xctest */;
+			productReference = 65B40B812C293C04000F59D3 /* Earthquake_MonitoringTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		65B40B8A2C293C04000F59D3 /* Earthquake MonitoringUITests */ = {
+		65B40B8A2C293C04000F59D3 /* Earthquake_MonitoringUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 65B40B9B2C293C04000F59D3 /* Build configuration list for PBXNativeTarget "Earthquake MonitoringUITests" */;
+			buildConfigurationList = 65B40B9B2C293C04000F59D3 /* Build configuration list for PBXNativeTarget "Earthquake_MonitoringUITests" */;
 			buildPhases = (
 				65B40B872C293C04000F59D3 /* Sources */,
 				65B40B882C293C04000F59D3 /* Frameworks */,
@@ -201,9 +201,9 @@
 			dependencies = (
 				65B40B8D2C293C04000F59D3 /* PBXTargetDependency */,
 			);
-			name = "Earthquake MonitoringUITests";
+			name = Earthquake_MonitoringUITests;
 			productName = "Earthquake MonitoringUITests";
-			productReference = 65B40B8B2C293C04000F59D3 /* Earthquake MonitoringUITests.xctest */;
+			productReference = 65B40B8B2C293C04000F59D3 /* Earthquake_MonitoringUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -229,7 +229,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 65B40B662C293C00000F59D3 /* Build configuration list for PBXProject "Earthquake Monitoring" */;
+			buildConfigurationList = 65B40B662C293C00000F59D3 /* Build configuration list for PBXProject "Earthquake_Monitoring" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -242,9 +242,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				65B40B6A2C293C00000F59D3 /* Earthquake Monitoring */,
-				65B40B802C293C04000F59D3 /* Earthquake MonitoringTests */,
-				65B40B8A2C293C04000F59D3 /* Earthquake MonitoringUITests */,
+				65B40B6A2C293C00000F59D3 /* Earthquake_Monitoring */,
+				65B40B802C293C04000F59D3 /* Earthquake_MonitoringTests */,
+				65B40B8A2C293C04000F59D3 /* Earthquake_MonitoringUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -306,12 +306,12 @@
 /* Begin PBXTargetDependency section */
 		65B40B832C293C04000F59D3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 65B40B6A2C293C00000F59D3 /* Earthquake Monitoring */;
+			target = 65B40B6A2C293C00000F59D3 /* Earthquake_Monitoring */;
 			targetProxy = 65B40B822C293C04000F59D3 /* PBXContainerItemProxy */;
 		};
 		65B40B8D2C293C04000F59D3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 65B40B6A2C293C00000F59D3 /* Earthquake Monitoring */;
+			target = 65B40B6A2C293C00000F59D3 /* Earthquake_Monitoring */;
 			targetProxy = 65B40B8C2C293C04000F59D3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -514,7 +514,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Earthquake Monitoring.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Earthquake Monitoring";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Earthquake_Monitoring.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Earthquake_Monitoring";
 			};
 			name = Debug;
 		};
@@ -533,7 +533,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Earthquake Monitoring.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Earthquake Monitoring";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Earthquake_Monitoring.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Earthquake_Monitoring";
 			};
 			name = Release;
 		};
@@ -574,7 +574,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		65B40B662C293C00000F59D3 /* Build configuration list for PBXProject "Earthquake Monitoring" */ = {
+		65B40B662C293C00000F59D3 /* Build configuration list for PBXProject "Earthquake_Monitoring" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				65B40B932C293C04000F59D3 /* Debug */,
@@ -583,7 +583,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		65B40B952C293C04000F59D3 /* Build configuration list for PBXNativeTarget "Earthquake Monitoring" */ = {
+		65B40B952C293C04000F59D3 /* Build configuration list for PBXNativeTarget "Earthquake_Monitoring" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				65B40B962C293C04000F59D3 /* Debug */,
@@ -592,7 +592,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		65B40B982C293C04000F59D3 /* Build configuration list for PBXNativeTarget "Earthquake MonitoringTests" */ = {
+		65B40B982C293C04000F59D3 /* Build configuration list for PBXNativeTarget "Earthquake_MonitoringTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				65B40B992C293C04000F59D3 /* Debug */,
@@ -601,7 +601,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		65B40B9B2C293C04000F59D3 /* Build configuration list for PBXNativeTarget "Earthquake MonitoringUITests" */ = {
+		65B40B9B2C293C04000F59D3 /* Build configuration list for PBXNativeTarget "Earthquake_MonitoringUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				65B40B9C2C293C04000F59D3 /* Debug */,
