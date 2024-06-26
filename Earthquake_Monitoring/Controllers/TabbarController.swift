@@ -7,10 +7,20 @@
 
 import UIKit
 
-class TabbarController: UIViewController {
+class TabbarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupTabs()
+        
+        // change the background of the tabbar
+//        self.tabBar.barTintColor = UIColor.red
+        
+        // change the icon and the title color
+        self.tabBar.tintColor = UIColor.green
+        
+        
+        self.tabBar.unselectedItemTintColor = UIColor.purple
 
         
     }
@@ -20,7 +30,7 @@ class TabbarController: UIViewController {
         let earthquakeViewController = EarthquakeViewController()
             
         let home = self.createNav(with: "Home", and: UIImage(systemName: "house"), vc: homeController)
-        let home = self.createNav(with: "History", and: UIImage(systemName: "clock"), vc: earthquakeViewController)
+        let history = self.createNav(with: "History", and: UIImage(systemName: "clock"), vc: earthquakeViewController)
         
         
         self.setViewControllers([], animated: true)
