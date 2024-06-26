@@ -7,11 +7,13 @@
 
 import UIKit
 
-class TabbarController: UITabBarController {
+class TabbarController: UITabBarController, UITabBarControllerDelegate  {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupTabs()
+        
+        self.selectedIndex = 2
         
         // change the background of the tabbar
 //        self.tabBar.barTintColor = UIColor.red
@@ -19,8 +21,9 @@ class TabbarController: UITabBarController {
         // change the icon and the title color
         self.tabBar.tintColor = UIColor.green
         
-        
         self.tabBar.unselectedItemTintColor = UIColor.purple
+        
+        self.delegate = self
 
         
     }
@@ -42,6 +45,16 @@ class TabbarController: UITabBarController {
         nav.tabBarItem.image = image
         
         nav.viewControllers.first?.navigationItem.title = title + "Controller"
+    }
+    func tabBarController(_ tabBarController: UITabBarController, didSelect
+                          viewContoller: UIViewController){
+       
+        if self.selectedIndex == 1 {
+            let alert = UIAlertController(title: "View Eathquake data", message: nil, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+        tabBar(<#T##tabBar: UITabBar##UITabBar#>, didSelect: <#T##UITabBarItem#>)
     }
    
 
