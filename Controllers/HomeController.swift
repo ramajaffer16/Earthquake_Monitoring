@@ -20,10 +20,16 @@ class HomeController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupUI()
-        // Do any additional setup after loading the view.
+       
     }
 
     private func setupUI(){
         self.view.backgroundColor = .systemBlue
+    }
+   
+    @objc func didTapButton(){
+    let vc = EarthquakeViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+        
     }
 }
