@@ -34,7 +34,7 @@ class TabbarController: UITabBarController, UITabBarControllerDelegate  {
         let earthquakeViewController = EarthquakeViewController()
             
         let home = self.createNav(with: "Home", and: UIImage(systemName: "house"), vc: homeController)
-        let history = self.createNav(with: "History", and: UIImage(systemName: "clock"), vc: earthquakeViewController)
+        let history = self.createNav(with: "EarthquakeHistory", and: UIImage(systemName: "clock"), vc: earthquakeViewController)
         
         
         self.setViewControllers([home,history], animated: true)
