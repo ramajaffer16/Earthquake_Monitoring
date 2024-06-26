@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65547BF42C2AA4BA009FCB60 /* Eathquake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65547BF32C2AA4BA009FCB60 /* Eathquake.swift */; };
+		65547BFD2C2BE651009FCB60 /* EaryhquakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65547BFC2C2BE651009FCB60 /* EaryhquakeViewController.swift */; };
 		659EE7F42C296B7F001826DE /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659EE7F32C296B7F001826DE /* Constant.swift */; };
 		65B40B6F2C293C00000F59D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B40B6E2C293C00000F59D3 /* AppDelegate.swift */; };
 		65B40B712C293C00000F59D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B40B702C293C00000F59D3 /* SceneDelegate.swift */; };
@@ -33,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		65547BF32C2AA4BA009FCB60 /* Eathquake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eathquake.swift; sourceTree = "<group>"; };
+		65547BFC2C2BE651009FCB60 /* EaryhquakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EaryhquakeViewController.swift; sourceTree = "<group>"; };
 		659EE7F32C296B7F001826DE /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		65B40B6B2C293C00000F59D3 /* Earthquake_Monitoring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Earthquake_Monitoring.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65B40B6E2C293C00000F59D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				65B40B722C293C00000F59D3 /* ViewController.swift */,
+				65547BFC2C2BE651009FCB60 /* EaryhquakeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -102,6 +107,7 @@
 		659EE7EE2C29620E001826DE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				65547BF32C2AA4BA009FCB60 /* Eathquake.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -282,8 +288,10 @@
 			files = (
 				65B40B732C293C00000F59D3 /* ViewController.swift in Sources */,
 				65B40B6F2C293C00000F59D3 /* AppDelegate.swift in Sources */,
+				65547BFD2C2BE651009FCB60 /* EaryhquakeViewController.swift in Sources */,
 				65B40B712C293C00000F59D3 /* SceneDelegate.swift in Sources */,
 				659EE7F42C296B7F001826DE /* Constant.swift in Sources */,
+				65547BF42C2AA4BA009FCB60 /* Eathquake.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
