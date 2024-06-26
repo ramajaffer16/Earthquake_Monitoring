@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		65547BF42C2AA4BA009FCB60 /* Eathquake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65547BF32C2AA4BA009FCB60 /* Eathquake.swift */; };
-		65547BFD2C2BE651009FCB60 /* EaryhquakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65547BFC2C2BE651009FCB60 /* EaryhquakeViewController.swift */; };
+		65547BFF2C2BEB13009FCB60 /* EarthquakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65547BFE2C2BEB13009FCB60 /* EarthquakeViewController.swift */; };
+		65547C012C2BEDDC009FCB60 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65547C002C2BEDDC009FCB60 /* TabbarController.swift */; };
 		659EE7F42C296B7F001826DE /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659EE7F32C296B7F001826DE /* Constant.swift */; };
 		65B40B6F2C293C00000F59D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B40B6E2C293C00000F59D3 /* AppDelegate.swift */; };
 		65B40B712C293C00000F59D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B40B702C293C00000F59D3 /* SceneDelegate.swift */; };
-		65B40B732C293C00000F59D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B40B722C293C00000F59D3 /* ViewController.swift */; };
+		65B40B732C293C00000F59D3 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B40B722C293C00000F59D3 /* HomeController.swift */; };
 		65B40B782C293C03000F59D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65B40B772C293C03000F59D3 /* Assets.xcassets */; };
 		65B40B7B2C293C03000F59D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B40B792C293C03000F59D3 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -36,12 +37,13 @@
 
 /* Begin PBXFileReference section */
 		65547BF32C2AA4BA009FCB60 /* Eathquake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eathquake.swift; sourceTree = "<group>"; };
-		65547BFC2C2BE651009FCB60 /* EaryhquakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EaryhquakeViewController.swift; sourceTree = "<group>"; };
+		65547BFE2C2BEB13009FCB60 /* EarthquakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeViewController.swift; sourceTree = "<group>"; };
+		65547C002C2BEDDC009FCB60 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 		659EE7F32C296B7F001826DE /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		65B40B6B2C293C00000F59D3 /* Earthquake_Monitoring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Earthquake_Monitoring.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65B40B6E2C293C00000F59D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65B40B702C293C00000F59D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		65B40B722C293C00000F59D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		65B40B722C293C00000F59D3 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		65B40B772C293C03000F59D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65B40B7A2C293C03000F59D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65B40B7C2C293C03000F59D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,8 +79,9 @@
 		659EE7EA2C2960C2001826DE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				65B40B722C293C00000F59D3 /* ViewController.swift */,
-				65547BFC2C2BE651009FCB60 /* EaryhquakeViewController.swift */,
+				65B40B722C293C00000F59D3 /* HomeController.swift */,
+				65547BFE2C2BEB13009FCB60 /* EarthquakeViewController.swift */,
+				65547C002C2BEDDC009FCB60 /* TabbarController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -286,12 +289,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65B40B732C293C00000F59D3 /* ViewController.swift in Sources */,
+				65B40B732C293C00000F59D3 /* HomeController.swift in Sources */,
 				65B40B6F2C293C00000F59D3 /* AppDelegate.swift in Sources */,
-				65547BFD2C2BE651009FCB60 /* EaryhquakeViewController.swift in Sources */,
 				65B40B712C293C00000F59D3 /* SceneDelegate.swift in Sources */,
+				65547BFF2C2BEB13009FCB60 /* EarthquakeViewController.swift in Sources */,
 				659EE7F42C296B7F001826DE /* Constant.swift in Sources */,
 				65547BF42C2AA4BA009FCB60 /* Eathquake.swift in Sources */,
+				65547C012C2BEDDC009FCB60 /* TabbarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
