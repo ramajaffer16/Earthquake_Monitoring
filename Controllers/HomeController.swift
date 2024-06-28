@@ -3,7 +3,7 @@
 //  Earthquake Monitoring
 //
 //  Created by Gracie on 24/06/2024.
-//
+
 
 import UIKit
 
@@ -33,3 +33,4 @@ class HomeController: UIViewController {
         
     }
 }
+

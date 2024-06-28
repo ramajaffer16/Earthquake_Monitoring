@@ -15,17 +15,10 @@ struct Earthquake: Codable {
 // MARK: - Feature
 struct Feature: Codable {
     let properties: Properties
-    let geometry: Geometry
-}
-
-// MARK: - Geometry
-struct Geometry: Codable {
-    let coordinates: [Double]
 }
 
 // MARK: - Properties
 struct Properties: Codable {
-    let mag: Double?
-    let place: String?
-    let time: Int?
+    let place: String
+    let mag: Double
 }
