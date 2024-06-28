@@ -16,10 +16,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else {return}
         let window = UIWindow(windowScene: windowScene)
         let HomeController = UIViewController()
-        let firstNavController = UINavigationController(rootViewController: HomeController)
-        
-        let EarthquakeViewController = UIViewController()
-        let secondNavController = UINavigationController(rootViewController: EarthquakeViewController)
+//        let firstNavController = UINavigationController(rootViewController: HomeController)
+//        
+//        let EarthquakeViewController = UIViewController()
+//        let secondNavController = UINavigationController(rootViewController: EarthquakeViewController)
         window.rootViewController = TabbarController()
         self.window = window
         self.window?.makeKeyAndVisible()
