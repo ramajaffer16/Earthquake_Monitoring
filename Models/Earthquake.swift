@@ -7,18 +7,11 @@
 
 import Foundation
 
-// MARK: - Earthquake
 struct Earthquake: Codable {
-    let features: [Feature]
-}
-
-// MARK: - Feature
-struct Feature: Codable {
-    let properties: Properties
-}
-
-// MARK: - Properties
-struct Properties: Codable {
-    let place: String
-    let mag: Double
+    let id: Int
+    let title: String
+    let location: String
+    let magnitude: Double
+    let depth: Double
+    let time: Date
 }
