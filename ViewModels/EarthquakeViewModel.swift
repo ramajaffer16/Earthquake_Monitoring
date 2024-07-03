@@ -31,3 +31,37 @@
 //            .store(in: &cancellables)
 //    }
 //}
+// EarthquakeListViewModel.swift
+// EarthquakeViewModel.swift
+import Foundation
+import RxSwift
+import RxCocoa
+
+import Foundation
+import RxSwift
+
+class EarthquakeViewModel {
+    private let earthquakeService: EarthquakeService
+    private let disposeBag = DisposeBag()
+
+    // Inputs
+    let fetchEarthquakes = PublishSubject<Void>()
+
+    // Outputs
+    let earthquakes = PublishSubject<[Earthquake]>()
+
+    init(earthquakeService: EarthquakeService = EarthquakeService()) {
+        self.earthquakeService = earthquakeService
+
+        fetchEarthquakes
+            .flatMapLatest { _ in
+                earthquakeService.fetchEarthquakes()
+                    .catch { error in
+                        print("Error fetching earthquakes: \(error.localizedDescription)")
+                        return Observable.just([])
+                    }
+            }
+            .bind(to: earthquakes)
+            .disposed(by: disposeBag)
+    }
+}

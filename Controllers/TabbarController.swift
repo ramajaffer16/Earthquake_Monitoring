@@ -31,7 +31,9 @@ class TabbarController: UITabBarController, UITabBarControllerDelegate  {
     
     private func setupTabs(){
         let homeController = HomeController()
-        let earthquakeViewController = EarthquakeViewController()
+        let viewModel = EarthquakeViewModel()
+        
+        let earthquakeViewController = EarthquakeViewController(viewModel: viewModel)
             
         let home = self.createNav(with: "Home", and: UIImage(systemName: "house"), vc: homeController)
         let history = self.createNav(with: "EarthquakeHistory", and: UIImage(systemName: "clock"), vc: earthquakeViewController)
