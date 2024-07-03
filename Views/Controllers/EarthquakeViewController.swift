@@ -5,26 +5,7 @@
 //  Created by Gracie on 26/06/2024.
 
 
-//import UIKit
-//import RxSwift
-//
-//class EarthquakeViewController: UIViewController {
-//
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        self.view.backgroundColor = .systemPink
-//
-//       
-//    }
-//    
-//
-//   
-//
-//}
 
-
-// EarthquakeListViewController.swift
-// EarthquakeListViewController.swift
 import UIKit
 import RxSwift
 import RxCocoa
@@ -53,7 +34,7 @@ class EarthquakeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Earthquakes"
+        title = "Earthquakes Data"
         setupUI()
         setupBindings()
         viewModel.fetchEarthquakes.onNext(())
