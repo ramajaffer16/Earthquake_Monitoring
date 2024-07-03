@@ -21,11 +21,7 @@
 //   
 //
 //}
-import UIKit
-import RxSwift
 
-
-import RxCocoa
 
 // EarthquakeListViewController.swift
 // EarthquakeListViewController.swift
@@ -35,15 +31,17 @@ import RxCocoa
 
 class EarthquakeViewController: UIViewController {
     var viewModel: EarthquakeViewModel
-       
-       init(viewModel: EarthquakeViewModel) {
-           self.viewModel = viewModel
-           super.init(nibName: nil, bundle: nil)
-       }
-       
-       required init?(coder: NSCoder) {
-           fatalError("init(coder:) has not been implemented")
-       }
+    
+    init(viewModel: EarthquakeViewModel){
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    
     private let disposeBag = DisposeBag()
 
     private let tableView: UITableView = {
@@ -55,6 +53,7 @@ class EarthquakeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Earthquakes"
         setupUI()
         setupBindings()
         viewModel.fetchEarthquakes.onNext(())
@@ -79,9 +78,15 @@ class EarthquakeViewController: UIViewController {
             .disposed(by: disposeBag)
 
         tableView.rx.modelSelected(Earthquake.self)
-            .subscribe(onNext: { earthquake in
-                // Handle selection if needed
+            .subscribe(onNext: { [weak self] earthquake in
+                self?.showMapForEarthquake(earthquake)
             })
             .disposed(by: disposeBag)
+    }
+
+    private func showMapForEarthquake(_ earthquake: Earthquake) {
+        let mapViewController = MapViewController()
+        mapViewController.earthquake = earthquake
+        navigationController?.pushViewController(mapViewController, animated: true)
     }
 }

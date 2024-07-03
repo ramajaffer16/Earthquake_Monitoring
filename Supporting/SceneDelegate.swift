@@ -18,11 +18,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //                let viewModel = EarthquakeViewModel(apiService: apiService)
 //                let viewController = EarthquakeViewController(viewModel: viewModel)
         let window = UIWindow(windowScene: windowScene)
-//        let HomeController = UIViewController()
-//        let firstNavController = UINavigationController(rootViewController: HomeController)
-//        
-//        let EarthquakeViewController = UIViewController()
-//        let secondNavController = UINavigationController(rootViewController: EarthquakeViewController)
+        let homeViewController = HomeController()  
+        let earthquakeViewController = EarthquakeViewController(viewModel: EarthquakeViewModel())
+
+                let homeNavigationController = UINavigationController(rootViewController: homeViewController)
+                let earthquakeNavigationController = UINavigationController(rootViewController: earthquakeViewController)
+
         window.rootViewController = TabbarController()
         self.window = window
         self.window?.makeKeyAndVisible()
