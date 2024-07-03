@@ -5,8 +5,7 @@
 //  Created by Gracie on 26/06/2024.
 //
 
-// Earthquake.swift
-// Earthquake.swift
+
 import Foundation
 import RxSwift
 

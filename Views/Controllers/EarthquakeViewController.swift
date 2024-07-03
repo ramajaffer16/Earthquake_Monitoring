@@ -27,6 +27,7 @@ class EarthquakeViewController: UIViewController {
 
     private let tableView: UITableView = {
         let tableView = UITableView()
+        
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
@@ -54,7 +55,13 @@ class EarthquakeViewController: UIViewController {
         viewModel.earthquakes
             .observe(on: MainScheduler.instance)
             .bind(to: tableView.rx.items(cellIdentifier: "Cell", cellType: UITableViewCell.self)) { row, element, cell in
-                cell.textLabel?.text = "\(element.magnitude) - \(element.place)"
+                cell.textLabel?.numberOfLines = 0  // Allow multiline text in cell
+                cell.textLabel?.text = """
+                Magnitude: \(element.magnitude)
+                Place: \(element.place)
+                Time: \(element.time)
+                Coordinates: \(element.coordinates.latitude), \(element.coordinates.longitude)
+                """
             }
             .disposed(by: disposeBag)
 
@@ -65,9 +72,11 @@ class EarthquakeViewController: UIViewController {
             .disposed(by: disposeBag)
     }
 
+
     private func showMapForEarthquake(_ earthquake: Earthquake) {
         let mapViewController = MapViewController()
         mapViewController.earthquake = earthquake
         navigationController?.pushViewController(mapViewController, animated: true)
     }
+
 }

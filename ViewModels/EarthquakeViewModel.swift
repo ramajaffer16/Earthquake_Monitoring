@@ -35,10 +35,6 @@
 // EarthquakeViewModel.swift
 import Foundation
 import RxSwift
-import RxCocoa
-
-import Foundation
-import RxSwift
 
 class EarthquakeViewModel {
     private let earthquakeService: EarthquakeService
