@@ -65,6 +65,7 @@ class TabbarController: UITabBarController, UITabBarControllerDelegate  {
             print("No view Controller")
         }
         return nav
+        //in this func I dont know why I cant access the second view controller
     }
     func tabBarController(_ tabBarController: UITabBarController, didSelect
                           viewContoller: UIViewController){

@@ -4,7 +4,7 @@
 //
 //  Created by Gracie on 26/06/2024.
 //
-
+// This is the simple structure of the my Earthquake Application
 
 import Foundation
 import RxSwift

@@ -4,7 +4,7 @@
 //
 //  Created by Gracie on 03/07/2024.
 //
-
+//this is the structure of the Earthquake from the JSON API that will be decodable
 import Foundation
 import Foundation
 
