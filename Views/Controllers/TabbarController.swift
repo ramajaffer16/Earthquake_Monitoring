@@ -55,9 +55,14 @@ class TabbarController: UITabBarController, UITabBarControllerDelegate  {
         
         if nav.viewControllers.count > 0 {
             nav.viewControllers[0].navigationItem.title = "Welcome"
-
+        
+            if nav.viewControllers.count > 1 {
+                nav.viewControllers[1].navigationItem.title = "Salma"
+            }else {
+                print("No second View controller")
+            }
         }else {
-            nav.viewControllers[1].navigationItem.title = "Salma"
+            print("No view Controller")
         }
         return nav
     }
