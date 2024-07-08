@@ -20,8 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let homeViewController = HomeController()
         let earthquakeViewController = EarthquakeViewController(viewModel: EarthquakeViewModel()) // added parameter coz it takes viewmodel data
         
-        let nav = UINavigationController()
-        nav.setViewControllers([homeViewController], animated:true)
+        let nav = UINavigationController(rootViewController: homeViewController)
         nav.pushViewController(earthquakeViewController, animated:true)
 
     

@@ -74,9 +74,7 @@ class TabbarController: UITabBarController, UITabBarControllerDelegate  {
             alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         }
-        func tabBar(_tabBar: UITabBar, didSelect item: UITabBarItem){
-            
-        }
+        
     }
    
 
