@@ -54,7 +54,8 @@ class TabbarController: UITabBarController, UITabBarControllerDelegate  {
         nav.tabBarItem.image = image
         
         if nav.viewControllers.count > 0 {
-            nav.viewControllers[0].navigationItem.title = "Jafari"
+            nav.viewControllers[0].navigationItem.title = "Welcome"
+
         }else {
             nav.viewControllers[1].navigationItem.title = "Salma"
         }
