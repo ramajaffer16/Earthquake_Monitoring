@@ -22,6 +22,12 @@ class TabbarController: UITabBarController, UITabBarControllerDelegate  {
         // change the icon and the title color
         self.tabBar.tintColor = UIColor.green
         
+        let homeController = HomeController()
+        let earthquakeViewController = EarthquakeViewController(viewModel: EarthquakeViewModel())
+        
+        homeController.tabBarItem.title = "Welcome Rama"
+        earthquakeViewController.tabBarItem.title = "Earthquake"
+        
         self.tabBar.unselectedItemTintColor = UIColor.purple
         
         self.delegate = self
@@ -35,8 +41,8 @@ class TabbarController: UITabBarController, UITabBarControllerDelegate  {
         
         let earthquakeViewController = EarthquakeViewController(viewModel: viewModel)
             
-        let home = self.createNav(with: "Home", and: UIImage(systemName: "house"), vc: homeController)
-        let history = self.createNav(with: "EarthquakeHistory", and: UIImage(systemName: "clock"), vc: earthquakeViewController)
+        let home = createNav(with: "Home", and: UIImage(systemName: "house"), vc: homeController)
+        let history = createNav(with: "EarthquakeHistory", and: UIImage(systemName: "clock"), vc: earthquakeViewController)
         
         
         self.setViewControllers([home,history], animated: true)
@@ -47,7 +53,11 @@ class TabbarController: UITabBarController, UITabBarControllerDelegate  {
         nav.tabBarItem.title = title
         nav.tabBarItem.image = image
         
-        nav.viewControllers.first?.navigationItem.title = title + "Controller"
+        if nav.viewControllers.count > 0 {
+            nav.viewControllers[0].navigationItem.title = "Jafari"
+        }else {
+            nav.viewControllers[1].navigationItem.title = "Salma"
+        }
         return nav
     }
     func tabBarController(_ tabBarController: UITabBarController, didSelect

@@ -17,7 +17,7 @@ class EarthquakeViewModel {
     let fetchEarthquakes = PublishSubject<Void>()
 
     // Outputs
-    let earthquakes = PublishSubject<[Earthquake]>()
+    let earthquakes =  PublishSubject<[Earthquake]>()
 
     init(earthquakeService: EarthquakeService = EarthquakeService()) {
         self.earthquakeService = earthquakeService

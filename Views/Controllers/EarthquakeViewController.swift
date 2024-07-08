@@ -35,7 +35,8 @@ class EarthquakeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Earthquakes Data"
+//        NavigationBarItem.title = "Welcome"
+//        title = "Earthquakes Data"
         setupUI()
         setupBindings()
         viewModel.fetchEarthquakes.onNext(())

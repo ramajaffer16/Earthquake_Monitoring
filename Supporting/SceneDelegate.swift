@@ -22,10 +22,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // creating navigation controller
         let homeNavigationController = UINavigationController(rootViewController: homeViewController)// the rootview controller is the controller moving from
+        homeNavigationController.title = "Welcome"
+        
         let earthquakeNavigationController = UINavigationController(rootViewController: earthquakeViewController)
+        earthquakeNavigationController.title = "Earthquake Data"
         
        //I can also create tab-bar controller here using UITabBarController() but since I have a tabbar controller file I wont and instead customize there
-
+    
         window.rootViewController = TabbarController()
         self.window = window
         self.window?.makeKeyAndVisible()

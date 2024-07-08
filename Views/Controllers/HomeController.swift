@@ -15,7 +15,7 @@ class HomeController: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Welcome Rama's App"
+//        title = "Welcome"
      
         self.view.backgroundColor = .systemRed
       
