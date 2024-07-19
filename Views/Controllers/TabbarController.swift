@@ -55,6 +55,13 @@ class TabbarController: UITabBarController, UITabBarControllerDelegate  {
         
         if nav.viewControllers.count > 0 {
             nav.viewControllers[0].navigationItem.title = "Welcome"
+            
+            let appearance = UINavigationBarAppearance()
+//                    appearance.configureWithOpaqueBackground()
+                    appearance.titleTextAttributes = [.foregroundColor: UIColor.systemGreen]
+                    nav.navigationBar.standardAppearance = appearance
+                    nav.navigationBar.scrollEdgeAppearance = appearance
+            
         
             if nav.viewControllers.count > 1 {
                 nav.viewControllers[1].navigationItem.title = "Salma"

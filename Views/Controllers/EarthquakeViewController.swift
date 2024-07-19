@@ -32,6 +32,8 @@ class EarthquakeViewController: UIViewController {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()
+    
+   
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -75,7 +77,8 @@ class EarthquakeViewController: UIViewController {
 
 
     private func showMapForEarthquake(_ earthquake: Earthquake) {
-        let mapViewController = MapViewController()
+        let mapViewController =
+        MapViewController()
         mapViewController.earthquake = earthquake
         navigationController?.pushViewController(mapViewController, animated: true)
     }
