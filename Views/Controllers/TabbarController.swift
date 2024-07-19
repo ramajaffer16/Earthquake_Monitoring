@@ -55,9 +55,10 @@ class TabbarController: UITabBarController, UITabBarControllerDelegate  {
         
         if nav.viewControllers.count > 0 {
             nav.viewControllers[0].navigationItem.title = "Welcome"
+//            nav.viewControllers[1].navigationItem.title = "Earthquake Data"    cant access and name the second controller
             
             let appearance = UINavigationBarAppearance()
-//                    appearance.configureWithOpaqueBackground()   I dont want opaque background on nav
+//                    appearance.configureWithOpaqueBackground()
                     appearance.titleTextAttributes = [.foregroundColor: UIColor.systemGreen]
                     nav.navigationBar.standardAppearance = appearance
                     nav.navigationBar.scrollEdgeAppearance = appearance

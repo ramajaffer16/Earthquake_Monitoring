@@ -42,6 +42,11 @@ class EarthquakeViewController: UIViewController {
         setupUI()
         setupBindings()
         viewModel.fetchEarthquakes.onNext(())
+//        showAlert()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        showAlert()
     }
 
     private func setupUI() {
@@ -53,6 +58,17 @@ class EarthquakeViewController: UIViewController {
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
     }
+    func showAlert() {
+            let alert = UIAlertController(title: "Ready to view earthquake data?", message: nil, preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "Continue", style: .default, handler: { [weak self] _ in
+                self?.navigateToEarthquakeViewController()
+            }))
+            
+            alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
+            
+            present(alert, animated: true, completion: nil)
+        }
 
     private func setupBindings() {
         viewModel.earthquakes
@@ -74,7 +90,11 @@ class EarthquakeViewController: UIViewController {
             })
             .disposed(by: disposeBag)
     }
-
+    func navigateToEarthquakeViewController() {
+            let viewModel = EarthquakeViewModel()
+            let earthquakeViewController = EarthquakeViewController(viewModel: viewModel)
+            navigationController?.pushViewController(earthquakeViewController, animated: true)
+        }
 
     private func showMapForEarthquake(_ earthquake: Earthquake) {
         let mapViewController =
