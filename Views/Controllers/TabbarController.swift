@@ -57,7 +57,7 @@ class TabbarController: UITabBarController, UITabBarControllerDelegate  {
             nav.viewControllers[0].navigationItem.title = "Welcome"
             
             let appearance = UINavigationBarAppearance()
-//                    appearance.configureWithOpaqueBackground()
+//                    appearance.configureWithOpaqueBackground()   I dont want opaque background on nav
                     appearance.titleTextAttributes = [.foregroundColor: UIColor.systemGreen]
                     nav.navigationBar.standardAppearance = appearance
                     nav.navigationBar.scrollEdgeAppearance = appearance

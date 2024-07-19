@@ -23,6 +23,7 @@ class MapViewController: UIViewController {
         if let earthquake = earthquake {
             showEarthquakeLocationOnMap(earthquake)
         }
+      setupNavigation()
     }
 
     private func setupUI() {
