@@ -24,6 +24,14 @@ class EarthquakeViewController: UIViewController {
     
     
     private let disposeBag = DisposeBag()
+    
+    private let searchBar: UISearchBar = {
+        let searchBar = UISearchBar()
+        searchBar.placeholder = "Search by place"
+        searchBar.translatesAutoresizingMaskIntoConstraints = false
+        return searchBar
+        
+    }()
 
     private let tableView: UITableView = {
         let tableView = UITableView()
@@ -51,12 +59,18 @@ class EarthquakeViewController: UIViewController {
 
     private func setupUI() {
         view.addSubview(tableView)
+        view.addSubview(searchBar)
         NSLayoutConstraint.activate([
-            tableView.topAnchor.constraint(equalTo: view.topAnchor),
+            tableView.topAnchor.constraint(equalTo: searchBar.topAnchor),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
+        
+        NSLayoutConstraint.activate([searchBar.topAnchor.constraint(equalTo: view.topAnchor),
+                                     searchBar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+                                     searchBar.leadingAnchor.constraint(equalTo: view.leadingAnchor)
+                                    ])
     }
     func showAlert() {
             let alert = UIAlertController(title: "Ready to view earthquake data?", message: nil, preferredStyle: .alert)

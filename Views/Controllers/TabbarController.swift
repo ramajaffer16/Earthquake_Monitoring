@@ -17,7 +17,7 @@ class TabbarController: UITabBarController, UITabBarControllerDelegate  {
         self.selectedIndex = 2
         
         // change the background of the tabbar
-//        self.tabBar.barTintColor = UIColor.red
+       //  self.tabBar.barTintColor = UIColor.red
         
         // change the icon and the title color
         self.tabBar.tintColor = UIColor.green
@@ -73,7 +73,8 @@ class TabbarController: UITabBarController, UITabBarControllerDelegate  {
             print("No view Controller")
         }
         return nav
-        //in this func I dont know why I cant access the second view controller
+       //in this func I dont know why I cant access the second view controller
+        
     }
     func tabBarController(_ tabBarController: UITabBarController, didSelect
                           viewContoller: UIViewController){
