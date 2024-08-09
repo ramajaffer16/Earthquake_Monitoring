@@ -24,6 +24,14 @@ class EarthquakeViewController: UIViewController {
     
     
     private let disposeBag = DisposeBag()
+    
+    private let tableView: UITableView = {
+        let tableView = UITableView()
+        
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        return tableView
+    }()
 
     private let tableView: UITableView = {
         let tableView = UITableView()
