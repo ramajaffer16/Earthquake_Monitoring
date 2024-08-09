@@ -52,12 +52,18 @@ class EarthquakeViewController: UIViewController {
 
     private func setupUI() {
         view.addSubview(tableView)
+        view.addSubview(searchBar)
         NSLayoutConstraint.activate([
-            tableView.topAnchor.constraint(equalTo: view.topAnchor),
+            tableView.topAnchor.constraint(equalTo: searchBar.topAnchor),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
+        
+        NSLayoutConstraint.activate([searchBar.topAnchor.constraint(equalTo: view.topAnchor),
+                                     searchBar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+                                     searchBar.leadingAnchor.constraint(equalTo: view.leadingAnchor)
+                                    ])
     }
 
     private func setupBindings() {
