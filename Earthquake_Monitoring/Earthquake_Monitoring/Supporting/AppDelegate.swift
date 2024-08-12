@@ -1,9 +1,9 @@
-
-//  AppDelegate.swift
-//  Earthquake_Monitoring
 //
-//  Created by Gracie on 26/06/2024.
-
+//  AppDelegate.swift
+//  Earthquake Monitoring
+//
+//  Created by Gracie on 24/06/2024.
+//
 
 import UIKit
 

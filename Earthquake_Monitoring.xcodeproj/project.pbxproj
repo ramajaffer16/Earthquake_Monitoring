@@ -7,238 +7,173 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		65547BF42C2AA4BA009FCB60 /* Eathquake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65547BF32C2AA4BA009FCB60 /* Eathquake.swift */; };
-		65547BFF2C2BEB13009FCB60 /* EarthquakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65547BFE2C2BEB13009FCB60 /* EarthquakeViewController.swift */; };
-		65547C012C2BEDDC009FCB60 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65547C002C2BEDDC009FCB60 /* TabbarController.swift */; };
-		659EE7F42C296B7F001826DE /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659EE7F32C296B7F001826DE /* Constant.swift */; };
-		65B40B6F2C293C00000F59D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B40B6E2C293C00000F59D3 /* AppDelegate.swift */; };
-		65B40B712C293C00000F59D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B40B702C293C00000F59D3 /* SceneDelegate.swift */; };
-		65B40B732C293C00000F59D3 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B40B722C293C00000F59D3 /* HomeController.swift */; };
-		65B40B782C293C03000F59D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65B40B772C293C03000F59D3 /* Assets.xcassets */; };
-		65B40B7B2C293C03000F59D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B40B792C293C03000F59D3 /* LaunchScreen.storyboard */; };
+		6585FD7A2C2C49C100629112 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6585FD792C2C49C100629112 /* AppDelegate.swift */; };
+		6585FD7C2C2C49C100629112 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6585FD7B2C2C49C100629112 /* SceneDelegate.swift */; };
+		6585FD7E2C2C49C100629112 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6585FD7D2C2C49C100629112 /* HomeController.swift */; };
+		6585FD832C2C49C400629112 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6585FD822C2C49C400629112 /* Assets.xcassets */; };
+		6585FD862C2C49C400629112 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6585FD842C2C49C400629112 /* LaunchScreen.storyboard */; };
+		6585FD942C2C4A3900629112 /* EarthquakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6585FD932C2C4A3900629112 /* EarthquakeViewController.swift */; };
+		6585FD962C2C4A7A00629112 /* Earthquake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6585FD952C2C4A7A00629112 /* Earthquake.swift */; };
+		6585FD9A2C2C4AC200629112 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6585FD992C2C4AC200629112 /* TabbarController.swift */; };
+		6585FDAF2C2C5A9000629112 /* APIEarthquake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6585FDAE2C2C5A9000629112 /* APIEarthquake.swift */; };
+		65A9C88F2C352D6C0046A3B2 /* Earthquakeresponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A9C88E2C352D6C0046A3B2 /* Earthquakeresponse.swift */; };
+		65A9C8932C353F400046A3B2 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A9C8922C353F400046A3B2 /* MapView.swift */; };
+		65C485952C2F0212008AA99C /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 65C485942C2F0212008AA99C /* RxCocoa */; };
+		65C485972C2F05E7008AA99C /* EarthquakeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C485962C2F05E7008AA99C /* EarthquakeViewModel.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		65B40B822C293C04000F59D3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 65B40B632C293C00000F59D3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 65B40B6A2C293C00000F59D3;
-			remoteInfo = "Earthquake Monitoring";
-		};
-		65B40B8C2C293C04000F59D3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 65B40B632C293C00000F59D3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 65B40B6A2C293C00000F59D3;
-			remoteInfo = "Earthquake Monitoring";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		65547BF32C2AA4BA009FCB60 /* Eathquake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eathquake.swift; sourceTree = "<group>"; };
-		65547BFE2C2BEB13009FCB60 /* EarthquakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeViewController.swift; sourceTree = "<group>"; };
-		65547C002C2BEDDC009FCB60 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
-		659EE7F32C296B7F001826DE /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
-		65B40B6B2C293C00000F59D3 /* Earthquake_Monitoring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Earthquake_Monitoring.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		65B40B6E2C293C00000F59D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		65B40B702C293C00000F59D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		65B40B722C293C00000F59D3 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
-		65B40B772C293C03000F59D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		65B40B7A2C293C03000F59D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		65B40B7C2C293C03000F59D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		65B40B812C293C04000F59D3 /* Earthquake_MonitoringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Earthquake_MonitoringTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		65B40B8B2C293C04000F59D3 /* Earthquake_MonitoringUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Earthquake_MonitoringUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6585FD762C2C49C100629112 /* Earthquake_Monitoring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Earthquake_Monitoring.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6585FD792C2C49C100629112 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6585FD7B2C2C49C100629112 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6585FD7D2C2C49C100629112 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		6585FD822C2C49C400629112 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6585FD852C2C49C400629112 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6585FD872C2C49C400629112 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6585FD932C2C4A3900629112 /* EarthquakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeViewController.swift; sourceTree = "<group>"; };
+		6585FD952C2C4A7A00629112 /* Earthquake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Earthquake.swift; sourceTree = "<group>"; };
+		6585FD992C2C4AC200629112 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
+		6585FDAE2C2C5A9000629112 /* APIEarthquake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEarthquake.swift; sourceTree = "<group>"; };
+		65A9C88E2C352D6C0046A3B2 /* Earthquakeresponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Earthquakeresponse.swift; sourceTree = "<group>"; };
+		65A9C8922C353F400046A3B2 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		65C485962C2F05E7008AA99C /* EarthquakeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		65B40B682C293C00000F59D3 /* Frameworks */ = {
+		6585FD732C2C49C100629112 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		65B40B7E2C293C04000F59D3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		65B40B882C293C04000F59D3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				65C485952C2F0212008AA99C /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		659EE7EA2C2960C2001826DE /* Controllers */ = {
+		6585FD6D2C2C49C100629112 = {
 			isa = PBXGroup;
 			children = (
-				65B40B722C293C00000F59D3 /* HomeController.swift */,
-				65547BFE2C2BEB13009FCB60 /* EarthquakeViewController.swift */,
-				65547C002C2BEDDC009FCB60 /* TabbarController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		659EE7EB2C2960C2001826DE /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		659EE7EC2C2960C7001826DE /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		659EE7ED2C2961F8001826DE /* APIs */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = APIs;
-			sourceTree = "<group>";
-		};
-		659EE7EE2C29620E001826DE /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				65547BF32C2AA4BA009FCB60 /* Eathquake.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		659EE7EF2C296239001826DE /* Supporting */ = {
-			isa = PBXGroup;
-			children = (
-				65B40B772C293C03000F59D3 /* Assets.xcassets */,
-				65B40B792C293C03000F59D3 /* LaunchScreen.storyboard */,
-				65B40B6E2C293C00000F59D3 /* AppDelegate.swift */,
-				65B40B702C293C00000F59D3 /* SceneDelegate.swift */,
-				659EE7F32C296B7F001826DE /* Constant.swift */,
-			);
-			path = Supporting;
-			sourceTree = "<group>";
-		};
-		65B40B622C293C00000F59D3 = {
-			isa = PBXGroup;
-			children = (
-				65B40B6D2C293C00000F59D3 /* Earthquake_Monitoring */,
-				65B40B6C2C293C00000F59D3 /* Products */,
+				6585FD782C2C49C100629112 /* Earthquake_Monitoring */,
+				6585FD772C2C49C100629112 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		65B40B6C2C293C00000F59D3 /* Products */ = {
+		6585FD772C2C49C100629112 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				65B40B6B2C293C00000F59D3 /* Earthquake_Monitoring.app */,
-				65B40B812C293C04000F59D3 /* Earthquake_MonitoringTests.xctest */,
-				65B40B8B2C293C04000F59D3 /* Earthquake_MonitoringUITests.xctest */,
+				6585FD762C2C49C100629112 /* Earthquake_Monitoring.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		65B40B6D2C293C00000F59D3 /* Earthquake_Monitoring */ = {
+		6585FD782C2C49C100629112 /* Earthquake_Monitoring */ = {
 			isa = PBXGroup;
 			children = (
-				659EE7EF2C296239001826DE /* Supporting */,
-				659EE7EE2C29620E001826DE /* Models */,
-				659EE7ED2C2961F8001826DE /* APIs */,
-				659EE7EC2C2960C7001826DE /* Views */,
-				659EE7EB2C2960C2001826DE /* ViewModels */,
-				659EE7EA2C2960C2001826DE /* Controllers */,
-				65B40B7C2C293C03000F59D3 /* Info.plist */,
+				6585FD912C2C49D600629112 /* ViewModels */,
+				6585FD902C2C49D300629112 /* Models */,
+				6585FD8F2C2C49D000629112 /* Views */,
+				6585FD8E2C2C49CE00629112 /* APIs */,
+				6585FD8D2C2C49CC00629112 /* Supporting */,
+				6585FD872C2C49C400629112 /* Info.plist */,
 			);
 			path = Earthquake_Monitoring;
+			sourceTree = "<group>";
+		};
+		6585FD8D2C2C49CC00629112 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				6585FD792C2C49C100629112 /* AppDelegate.swift */,
+				6585FD7B2C2C49C100629112 /* SceneDelegate.swift */,
+				6585FD822C2C49C400629112 /* Assets.xcassets */,
+				6585FD842C2C49C400629112 /* LaunchScreen.storyboard */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		6585FD8E2C2C49CE00629112 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				6585FDAE2C2C5A9000629112 /* APIEarthquake.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		6585FD8F2C2C49D000629112 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6585FD922C2C49D800629112 /* Controllers */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6585FD902C2C49D300629112 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6585FD952C2C4A7A00629112 /* Earthquake.swift */,
+				65A9C88E2C352D6C0046A3B2 /* Earthquakeresponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6585FD912C2C49D600629112 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				65C485962C2F05E7008AA99C /* EarthquakeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		6585FD922C2C49D800629112 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6585FD7D2C2C49C100629112 /* HomeController.swift */,
+				6585FD932C2C4A3900629112 /* EarthquakeViewController.swift */,
+				6585FD992C2C4AC200629112 /* TabbarController.swift */,
+				65A9C8922C353F400046A3B2 /* MapView.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		65B40B6A2C293C00000F59D3 /* Earthquake_Monitoring */ = {
+		6585FD752C2C49C100629112 /* Earthquake_Monitoring */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 65B40B952C293C04000F59D3 /* Build configuration list for PBXNativeTarget "Earthquake_Monitoring" */;
+			buildConfigurationList = 6585FD8A2C2C49C400629112 /* Build configuration list for PBXNativeTarget "Earthquake_Monitoring" */;
 			buildPhases = (
-				65B40B672C293C00000F59D3 /* Sources */,
-				65B40B682C293C00000F59D3 /* Frameworks */,
-				65B40B692C293C00000F59D3 /* Resources */,
+				6585FD722C2C49C100629112 /* Sources */,
+				6585FD732C2C49C100629112 /* Frameworks */,
+				6585FD742C2C49C100629112 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Earthquake_Monitoring;
-			productName = "Earthquake Monitoring";
-			productReference = 65B40B6B2C293C00000F59D3 /* Earthquake_Monitoring.app */;
+			packageProductDependencies = (
+				65C485942C2F0212008AA99C /* RxCocoa */,
+			);
+			productName = Earthquake_Monitoring;
+			productReference = 6585FD762C2C49C100629112 /* Earthquake_Monitoring.app */;
 			productType = "com.apple.product-type.application";
-		};
-		65B40B802C293C04000F59D3 /* Earthquake_MonitoringTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 65B40B982C293C04000F59D3 /* Build configuration list for PBXNativeTarget "Earthquake_MonitoringTests" */;
-			buildPhases = (
-				65B40B7D2C293C04000F59D3 /* Sources */,
-				65B40B7E2C293C04000F59D3 /* Frameworks */,
-				65B40B7F2C293C04000F59D3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				65B40B832C293C04000F59D3 /* PBXTargetDependency */,
-			);
-			name = Earthquake_MonitoringTests;
-			productName = "Earthquake MonitoringTests";
-			productReference = 65B40B812C293C04000F59D3 /* Earthquake_MonitoringTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		65B40B8A2C293C04000F59D3 /* Earthquake_MonitoringUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 65B40B9B2C293C04000F59D3 /* Build configuration list for PBXNativeTarget "Earthquake_MonitoringUITests" */;
-			buildPhases = (
-				65B40B872C293C04000F59D3 /* Sources */,
-				65B40B882C293C04000F59D3 /* Frameworks */,
-				65B40B892C293C04000F59D3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				65B40B8D2C293C04000F59D3 /* PBXTargetDependency */,
-			);
-			name = Earthquake_MonitoringUITests;
-			productName = "Earthquake MonitoringUITests";
-			productReference = 65B40B8B2C293C04000F59D3 /* Earthquake_MonitoringUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		65B40B632C293C00000F59D3 /* Project object */ = {
+		6585FD6E2C2C49C100629112 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
-					65B40B6A2C293C00000F59D3 = {
+					6585FD752C2C49C100629112 = {
 						CreatedOnToolsVersion = 15.2;
-					};
-					65B40B802C293C04000F59D3 = {
-						CreatedOnToolsVersion = 15.2;
-						TestTargetID = 65B40B6A2C293C00000F59D3;
-					};
-					65B40B8A2C293C04000F59D3 = {
-						CreatedOnToolsVersion = 15.2;
-						TestTargetID = 65B40B6A2C293C00000F59D3;
 					};
 				};
 			};
-			buildConfigurationList = 65B40B662C293C00000F59D3 /* Build configuration list for PBXProject "Earthquake_Monitoring" */;
+			buildConfigurationList = 6585FD712C2C49C100629112 /* Build configuration list for PBXProject "Earthquake_Monitoring" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -246,93 +181,56 @@
 				en,
 				Base,
 			);
-			mainGroup = 65B40B622C293C00000F59D3;
-			productRefGroup = 65B40B6C2C293C00000F59D3 /* Products */;
+			mainGroup = 6585FD6D2C2C49C100629112;
+			packageReferences = (
+				65C485932C2F0212008AA99C /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
+			productRefGroup = 6585FD772C2C49C100629112 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				65B40B6A2C293C00000F59D3 /* Earthquake_Monitoring */,
-				65B40B802C293C04000F59D3 /* Earthquake_MonitoringTests */,
-				65B40B8A2C293C04000F59D3 /* Earthquake_MonitoringUITests */,
+				6585FD752C2C49C100629112 /* Earthquake_Monitoring */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		65B40B692C293C00000F59D3 /* Resources */ = {
+		6585FD742C2C49C100629112 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65B40B7B2C293C03000F59D3 /* LaunchScreen.storyboard in Resources */,
-				65B40B782C293C03000F59D3 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		65B40B7F2C293C04000F59D3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		65B40B892C293C04000F59D3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				6585FD862C2C49C400629112 /* LaunchScreen.storyboard in Resources */,
+				6585FD832C2C49C400629112 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		65B40B672C293C00000F59D3 /* Sources */ = {
+		6585FD722C2C49C100629112 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65B40B732C293C00000F59D3 /* HomeController.swift in Sources */,
-				65B40B6F2C293C00000F59D3 /* AppDelegate.swift in Sources */,
-				65B40B712C293C00000F59D3 /* SceneDelegate.swift in Sources */,
-				65547BFF2C2BEB13009FCB60 /* EarthquakeViewController.swift in Sources */,
-				659EE7F42C296B7F001826DE /* Constant.swift in Sources */,
-				65547BF42C2AA4BA009FCB60 /* Eathquake.swift in Sources */,
-				65547C012C2BEDDC009FCB60 /* TabbarController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		65B40B7D2C293C04000F59D3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		65B40B872C293C04000F59D3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				6585FD962C2C4A7A00629112 /* Earthquake.swift in Sources */,
+				6585FD9A2C2C4AC200629112 /* TabbarController.swift in Sources */,
+				65A9C8932C353F400046A3B2 /* MapView.swift in Sources */,
+				6585FD7E2C2C49C100629112 /* HomeController.swift in Sources */,
+				65C485972C2F05E7008AA99C /* EarthquakeViewModel.swift in Sources */,
+				65A9C88F2C352D6C0046A3B2 /* Earthquakeresponse.swift in Sources */,
+				6585FD7A2C2C49C100629112 /* AppDelegate.swift in Sources */,
+				6585FDAF2C2C5A9000629112 /* APIEarthquake.swift in Sources */,
+				6585FD7C2C2C49C100629112 /* SceneDelegate.swift in Sources */,
+				6585FD942C2C4A3900629112 /* EarthquakeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		65B40B832C293C04000F59D3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 65B40B6A2C293C00000F59D3 /* Earthquake_Monitoring */;
-			targetProxy = 65B40B822C293C04000F59D3 /* PBXContainerItemProxy */;
-		};
-		65B40B8D2C293C04000F59D3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 65B40B6A2C293C00000F59D3 /* Earthquake_Monitoring */;
-			targetProxy = 65B40B8C2C293C04000F59D3 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		65B40B792C293C03000F59D3 /* LaunchScreen.storyboard */ = {
+		6585FD842C2C49C400629112 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				65B40B7A2C293C03000F59D3 /* Base */,
+				6585FD852C2C49C400629112 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -340,7 +238,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		65B40B932C293C04000F59D3 /* Debug */ = {
+		6585FD882C2C49C400629112 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -392,7 +290,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -403,7 +301,7 @@
 			};
 			name = Debug;
 		};
-		65B40B942C293C04000F59D3 /* Release */ = {
+		6585FD892C2C49C400629112 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -449,7 +347,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -459,7 +357,7 @@
 			};
 			name = Release;
 		};
-		65B40B962C293C04000F59D3 /* Debug */ = {
+		6585FD8B2C2C49C400629112 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -467,7 +365,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Earthquake Monitoring/Info.plist";
+				INFOPLIST_FILE = Earthquake_Monitoring/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -477,7 +375,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.StockPricesApp.Earthquake-Monitoring";
+				PRODUCT_BUNDLE_IDENTIFIER = "Earthquake-Monitoring.Earthquake-Monitoring";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -485,7 +383,7 @@
 			};
 			name = Debug;
 		};
-		65B40B972C293C04000F59D3 /* Release */ = {
+		6585FD8C2C2C49C400629112 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -493,7 +391,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Earthquake Monitoring/Info.plist";
+				INFOPLIST_FILE = Earthquake_Monitoring/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -503,126 +401,55 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.StockPricesApp.Earthquake-Monitoring";
+				PRODUCT_BUNDLE_IDENTIFIER = "Earthquake-Monitoring.Earthquake-Monitoring";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		65B40B992C293C04000F59D3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.StockPricesApp.Earthquake-MonitoringTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Earthquake_Monitoring.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Earthquake_Monitoring";
-			};
-			name = Debug;
-		};
-		65B40B9A2C293C04000F59D3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.StockPricesApp.Earthquake-MonitoringTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Earthquake_Monitoring.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Earthquake_Monitoring";
-			};
-			name = Release;
-		};
-		65B40B9C2C293C04000F59D3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.StockPricesApp.Earthquake-MonitoringUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Earthquake Monitoring";
-			};
-			name = Debug;
-		};
-		65B40B9D2C293C04000F59D3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.StockPricesApp.Earthquake-MonitoringUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Earthquake Monitoring";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		65B40B662C293C00000F59D3 /* Build configuration list for PBXProject "Earthquake_Monitoring" */ = {
+		6585FD712C2C49C100629112 /* Build configuration list for PBXProject "Earthquake_Monitoring" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				65B40B932C293C04000F59D3 /* Debug */,
-				65B40B942C293C04000F59D3 /* Release */,
+				6585FD882C2C49C400629112 /* Debug */,
+				6585FD892C2C49C400629112 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		65B40B952C293C04000F59D3 /* Build configuration list for PBXNativeTarget "Earthquake_Monitoring" */ = {
+		6585FD8A2C2C49C400629112 /* Build configuration list for PBXNativeTarget "Earthquake_Monitoring" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				65B40B962C293C04000F59D3 /* Debug */,
-				65B40B972C293C04000F59D3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		65B40B982C293C04000F59D3 /* Build configuration list for PBXNativeTarget "Earthquake_MonitoringTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				65B40B992C293C04000F59D3 /* Debug */,
-				65B40B9A2C293C04000F59D3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		65B40B9B2C293C04000F59D3 /* Build configuration list for PBXNativeTarget "Earthquake_MonitoringUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				65B40B9C2C293C04000F59D3 /* Debug */,
-				65B40B9D2C293C04000F59D3 /* Release */,
+				6585FD8B2C2C49C400629112 /* Debug */,
+				6585FD8C2C2C49C400629112 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		65C485932C2F0212008AA99C /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		65C485942C2F0212008AA99C /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 65C485932C2F0212008AA99C /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 65B40B632C293C00000F59D3 /* Project object */;
+	rootObject = 6585FD6E2C2C49C100629112 /* Project object */;
 }

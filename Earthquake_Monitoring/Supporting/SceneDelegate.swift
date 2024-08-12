@@ -15,6 +15,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else {return}
         let window = UIWindow(windowScene: windowScene)
+        
+        // creating view controllers variables through the controller instances
+        let homeViewController = HomeController()
+        let earthquakeViewController = EarthquakeViewController(viewModel: EarthquakeViewModel()) // added parameter coz it takes viewmodel data
+        
+        let nav = UINavigationController(rootViewController: homeViewController)
+        nav.pushViewController(earthquakeViewController, animated:true)
+
+    
+    
         window.rootViewController = TabbarController()
         self.window = window
         self.window?.makeKeyAndVisible()
@@ -22,4 +32,3 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
 }
-
