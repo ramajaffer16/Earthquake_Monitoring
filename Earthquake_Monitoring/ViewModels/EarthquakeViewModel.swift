@@ -11,22 +11,18 @@ import RxSwift
 
 class EarthquakeViewModel {
     
-    // Dependencies
     private let earthquakeService: EarthquakeService
     private let disposeBag = DisposeBag()
 
-    // Inputs
-    let fetchEarthquakes = PublishSubject<Void>() // Trigger to fetch earthquakes
-    let searchQuery = PublishSubject<String>() // User input for search query
+    let fetchEarthquakes = PublishSubject<Void>()
+    let searchQuery = PublishSubject<String>()
 
-    // Outputs
-    let earthquakes = PublishSubject<[Earthquake]>() // All fetched earthquakes
-    let fetchedEarthquakes = PublishSubject<[Earthquake]>() // Filtered earthquakes based on search query
+    let earthquakes = PublishSubject<[Earthquake]>()
+    let fetchedEarthquakes = PublishSubject<[Earthquake]>()
 
     init(earthquakeService: EarthquakeService = EarthquakeService()) {
         self.earthquakeService = earthquakeService
 
-        // Fetch earthquakes when triggered
         fetchEarthquakes
             .flatMapLatest { _ in
                 earthquakeService.fetchEarthquakes()
@@ -38,7 +34,6 @@ class EarthquakeViewModel {
             .bind(to: earthquakes)
             .disposed(by: disposeBag)
         
-        // Combine earthquakes and searchQuery observables to filter results
         Observable.combineLatest(earthquakes, searchQuery) { earthquakes, query in
             return earthquakes.filter { earthquake in
                 query.isEmpty || earthquake.place.lowercased().contains(query.lowercased())
