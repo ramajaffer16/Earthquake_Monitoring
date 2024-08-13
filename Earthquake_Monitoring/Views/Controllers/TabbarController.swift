@@ -12,27 +12,22 @@ class TabbarController: UITabBarController, UITabBarControllerDelegate {
         customizeTabBarAppearance()
     }
 
-    // Set up the tab bar with the required tabs
     private func setupTabs() {
         let homeController = HomeController()
         let viewModel = EarthquakeViewModel()
         let earthquakeViewController = EarthquakeViewController(viewModel: viewModel)
 
-        // Create navigation controllers for each tab
         let homeNavController = createNavController(withTitle: "Home", image: UIImage(systemName: "house"), viewController: homeController)
         let historyNavController = createNavController(withTitle: "Earthquake History", image: UIImage(systemName: "clock"), viewController: earthquakeViewController)
 
-        // Set the view controllers of the tab bar
         setViewControllers([homeNavController, historyNavController], animated: true)
     }
 
-    // Create a navigation controller with a given title, image, and root view controller
     private func createNavController(withTitle title: String, image: UIImage?, viewController: UIViewController) -> UINavigationController {
         let navController = UINavigationController(rootViewController: viewController)
         navController.tabBarItem.title = title
         navController.tabBarItem.image = image
 
-        // Set navigation bar appearance
         if let firstController = navController.viewControllers.first {
             firstController.navigationItem.title = "QuakeWatch"
             let appearance = UINavigationBarAppearance()
@@ -54,8 +49,6 @@ class TabbarController: UITabBarController, UITabBarControllerDelegate {
        }
 
        
-
-    // Customize the appearance of the tab bar
     private func customizeTabBarAppearance() {
         let appearance = UITabBarAppearance()
         appearance.backgroundColor = .brown
@@ -63,7 +56,6 @@ class TabbarController: UITabBarController, UITabBarControllerDelegate {
         tabBar.scrollEdgeAppearance = appearance
     }
 
-    // Handle tab selection
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         let alert = UIAlertController(title: "Switching Tab", message: nil, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
