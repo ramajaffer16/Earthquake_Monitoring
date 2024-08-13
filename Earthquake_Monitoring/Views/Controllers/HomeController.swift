@@ -49,7 +49,7 @@ class HomeController: UIViewController {
         ])
     }
 
-    // Fetch the earthquakes from view mpodel and push to map view controller for dispaly
+    
     @objc private func navigateToEarthquake() {
         viewModel.fetchEarthquakes.onNext(())
 
